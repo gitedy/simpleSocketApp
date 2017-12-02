@@ -3,7 +3,7 @@ var app = angular.module('BlankApp', ['ngMaterial', 'LocalStorageModule', 'btfor
 
 app.service('SocketService', ['socketFactory', function SocketService(socketFactory) {
     return socketFactory({
-        ioSocket: io.connect('http://localhost:3000')
+        ioSocket: io.connect('https://simple-socket-app.herokuapp.com')
     });
 }]);
 
