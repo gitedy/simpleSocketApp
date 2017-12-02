@@ -23,8 +23,6 @@ io.on('connection', function(client) {
 
 });
 
+var port = process.env.PORT || 3000;
 
-server.listen(3000);
-
-
-// 127.0.0.1  localhost 192.168.0.119
+server.listen(port);
